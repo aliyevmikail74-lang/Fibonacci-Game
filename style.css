@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  color: #6cff3c;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: black; /* важно, чтобы не был прозрачным */
+}
+
+.hero {
+  margin-top: 100px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.sub {
+  margin: 20px 0;
+}
+
+/* НЕОН */
+.neon-box {
+  display: inline-block;
+  padding: 20px 30px;
+  background: #6cff3c;
+  color: black;
+  border-radius: 40px;
+  margin: 15px 0;
+  box-shadow: 6px 6px 0 white;
+  font-size: 12px;
+  max-width: 90%;
+}
+
+.large {
+  transform: rotate(-2deg);
+}
+
+/* INFO */
+.info {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.info h2 {
+  margin-top: 30px;
+  color: #6cff3c;
+  font-size: 14px;
+}
+
+.info p {
+  margin-top: 10px;
+  color: #ccc;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* КАЛЬКУЛЯТОР */
+.calculator {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  width: 200px;
+  max-width: 90%;
+}
+
+button {
+  padding: 12px 20px;
+  background: #6cff3c;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+#result {
+  margin-top: 20px;
+  color: #6cff3c;
+  font-size: 10px;
+  word-break: break-word;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+  color: #777;
+  font-size: 10px;
+}
+
+/* 📱 АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ */
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 14px;
+  }
+
+  .neon-box {
+    font-size: 10px;
+    padding: 15px 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+}
+
+/* 📱📱 ПЛАНШЕТЫ */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .hero h1 {
+    font-size: 18px;
+  }
+
+  .neon-box {
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Fibonacci Generator</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Пиксельный шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">FG</div>
+  <ul>
+    <li><a href="#home">Главная</a></li>
+    <li><a href="#about">О проекте</a></li>
+    <li><a href="#generator">Генератор</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Hello, this is</h1>
+
+  <div class="neon-box">FIBONACCI GENERATOR</div>
+
+  <p class="sub">and interactive</p>
+
+  <div class="neon-box large">FIBONACCI GAME</div>
+
+  <p class="desc">
+    Добро пожаловать в цифровой мир, где математика становится визуальной,
+    интерактивной и по-настоящему красивой.
+  </p>
+</section>
+
+<!-- INFO -->
+<section class="info" id="about">
+
+  <h2>Что такое Fibonacci Generator?</h2>
+  <p>
+    Генератор Фибоначчи — это инструмент, который создаёт последовательность чисел,
+    где каждое следующее число является суммой двух предыдущих.
+    Это одна из самых известных математических последовательностей в мире.
+  </p>
+
+  <p>
+    Последовательность начинается с 0 и 1:
+    0, 1, 1, 2, 3, 5, 8, 13, 21...
+    Эти числа встречаются в природе, архитектуре, искусстве и даже в финансовых рынках.
+  </p>
+
+  <h2>Как это работает?</h2>
+  <p>
+    Алгоритм очень простой, но мощный:
+    мы берём два предыдущих числа и складываем их.
+    Именно это делает наш генератор автоматически,
+    создавая последовательность любой длины.
+  </p>
+
+  <h2>Что такое Fibonacci Game?</h2>
+  <p>
+    Fibonacci Game — это интерактивный способ изучения последовательности.
+    Игроку нужно предсказать следующее число,
+    основываясь на предыдущих значениях.
+  </p>
+
+  <p>
+    Это развивает:
+    • логическое мышление  
+    • математическую интуицию  
+    • скорость анализа  
+  </p>
+
+  <p>
+    Чем дальше ты заходишь — тем сложнее становится игра.
+    Ошибка — и ты начинаешь заново.
+  </p>
+
+</section>
+
+<!-- GENERATOR -->
+<section class="info" id="generator">
+
+  <h2>Попробуй сам</h2>
+
+  <div class="calculator">
+    <input type="number" id="numberInput" placeholder="Введите число...">
+    <button onclick="generate()">Сгенерировать</button>
+  </div>
+
+  <div id="result"></div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© amdevelopersgroup</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
